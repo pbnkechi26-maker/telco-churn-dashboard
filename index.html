@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Telco Churn Dashboard Prototype</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <div class="title">
+      <h1>Telco Churn Dashboard Prototype</h1>
+      <p>Interactive browser-based prototype built from the scored customer dashboard export. Use the filters to explore portfolio risk, segment patterns, and customer prioritization.</p>
+    </div>
+    <div class="actions">
+      <button class="secondary" onclick="resetFilters()">Reset filters</button>
+      <button onclick="downloadFilteredCsv()">Download filtered CSV</button>
+    </div>
+  </div>
+
+  <div class="filters">
+    <div class="filter"><label>Contract</label><select id="fContract"></select></div>
+    <div class="filter"><label>Internet service</label><select id="fInternet"></select></div>
+    <div class="filter"><label>Payment method</label><select id="fPayment"></select></div>
+    <div class="filter"><label>Risk band</label><select id="fRisk"></select></div>
+    <div class="filter"><label>Tenure group</label><select id="fTenureGroup"></select></div>
+    <div class="filter"><label>Search customer ID / driver</label><input id="fSearch" type="text" placeholder="Type to search..." /></div>
+  </div>
+
+  <div class="cards">
+    <div class="card"><div class="k">Total customers</div><div class="v" id="kTotal">0</div><div class="s" id="sTotal">Filtered records</div></div>
+    <div class="card"><div class="k">Average risk score</div><div class="v" id="kAvgScore">0</div><div class="s">0–100 scale</div></div>
+    <div class="card"><div class="k">Average predicted probability</div><div class="v" id="kAvgProb">0%</div><div class="s">Mean churn probability</div></div>
+    <div class="card"><div class="k">High + critical risk</div><div class="v" id="kHighCritical">0</div><div class="s">Prioritization pool</div></div>
+    <div class="card"><div class="k">Actual churners</div><div class="v" id="kActualChurn">0</div><div class="s">Observed label in filtered view</div></div>
+    <div class="card"><div class="k">Selected model</div><div class="v" id="kModel" style="font-size:20px">—</div><div class="s">Traceability</div></div>
+  </div>
+
+  <div class="grid2">
+    <div class="panel">
+      <h3>Risk band distribution</h3>
+      <div class="sub">Counts in the currently filtered portfolio.</div>
+      <div id="riskBars" class="bars"></div>
+    </div>
+    <div class="panel">
+      <h3>Tenure vs Monthly Charges</h3>
+      <div class="sub">Points are colored by risk band.</div>
+      <div class="scatter-wrap"><svg id="scatter" width="100%" viewBox="0 0 560 320"></svg></div>
+    </div>
+  </div>
+
+  <div class="grid3">
+    <div class="panel">
+      <h3>Average risk score by contract</h3>
+      <div id="contractBars" class="bars"></div>
+    </div>
+    <div class="panel">
+      <h3>Average risk score by internet service</h3>
+      <div id="internetBars" class="bars"></div>
+    </div>
+    <div class="panel">
+      <h3>Average risk score by payment method</h3>
+      <div id="paymentBars" class="bars"></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>High-priority customer table</h3>
+    <div class="sub">Sorted by highest risk score within the current filter context.</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Customer ID</th>
+            <th>Risk band</th>
+            <th>Risk score</th>
+            <th>Probability</th>
+            <th>Contract</th>
+            <th>Tenure</th>
+            <th>Monthly charges</th>
+            <th>Internet service</th>
+            <th>Payment method</th>
+            <th>Top driver 1</th>
+            <th>Top driver 2</th>
+            <th>Driver summary</th>
+          </tr>
+        </thead>
+        <tbody id="customerRows"></tbody>
+      </table>
+    </div>
+    <div class="foot" id="tableFoot"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
