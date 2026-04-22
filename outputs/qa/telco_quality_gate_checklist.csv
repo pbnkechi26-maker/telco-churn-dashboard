@@ -1,0 +1,57 @@
+stage,check_name,passed,details
+post-audit,target_column_present,True,Churn column must exist.
+post-audit,identifier_column_present,True,customerID column must exist.
+post-audit,exact_duplicate_rows_checked,True,Exact duplicates found: 0
+post-audit,totalcharges_blanks_inspected,True,TotalCharges blank strings found: 11
+post-audit,class_distribution_reviewed,True,"[{'Churn': 'No', 'count': '5174', 'percentage': '73.46'}, {'Churn': 'Yes', 'count': '1869', 'percentage': '26.54'}]"
+post-cleaning,totalcharges_numeric_coercion_applied,True,Rows with NaN after coercion: 11
+post-cleaning,unresolved_totalcharges_rows_removed,True,Rows removed after inspection: 11
+post-cleaning,target_encoded_binary,True,Binary target created as churn_binary.
+post-cleaning,customerid_preserved_for_traceability,True,customerID retained in clean dataset.
+post-cleaning,derived_dashboard_fields_created,True,All required dashboard-oriented derived fields created.
+post-EDA,eda_figures_generated,True,Core EDA figures saved under figures/eda.
+post-EDA,segment_summaries_exported,True,"Contract, payment method, and internet service summaries exported."
+post-EDA,eda_answers_business_questions,True,"EDA covers churn concentration, charges, tenure, services, and key segments."
+post-modelling-setup,stratified_split_created_once,True,A single stratified 80/20 split was created.
+post-modelling-setup,dataset_partition_flag_created,True,dataset_partition column created with train/test labels.
+post-modelling-setup,customerid_excluded_from_model_features,True,customerID excluded from model features.
+post-modelling-setup,pipeline_based_preprocessing_defined,True,ColumnTransformer + Pipeline used for both models.
+post-modelling,holdout_metrics_computed,True,Hold-out metrics computed for both models.
+post-modelling,confusion_matrices_generated,True,Confusion matrices saved for both models.
+post-modelling,probability_outputs_available,True,Predicted probabilities stored for both models.
+post-scoring,risk_scores_created,True,Predicted probabilities and 0-100 risk scores created.
+post-scoring,risk_bands_created,True,Risk bands assigned to all customers.
+post-scoring,scored_dataset_exported,True,data\processed\telco_scored_dataset_with_risk_outputs.csv
+post-explainability,logistic_coefficients_exported,True,Logistic Regression coefficient table exported.
+post-explainability,permutation_importance_exported,True,Permutation importance exported for selected model.
+post-explainability,light_dashboard_cues_created,True,"top_risk_driver_1, top_risk_driver_2, and risk_driver_summary_short created."
+post-export,main_dashboard_csv_exported,True,exports\dashboard\telco_scored_customers_dashboard.csv
+post-export,high_risk_table_exported,True,High-risk priority table exported.
+post-export,dashboard_data_dictionary_exported,True,Dashboard data dictionary exported.
+post-export,export_schema_checks_completed,True,"[{'check_name': 'dashboard_export_exists', 'passed': 'True'}, {'check_name': 'dashboard_row_count_matches_clean_df', 'passed': 'True'}, {'check_name': 'customerID_unique', 'passed': 'True'}, {'check_name': 'predicted_probability_numeric', 'passed': 'True'}, {'check_name': 'risk_score_numeric', 'passed': 'True'}, {'check_name': 'risk_band_complete', 'passed': 'True'}, {'check_name': 'selected_model_name_present', 'passed': 'True'}]"
+final-qa,file_exists::telco_cleaned_base_dataset.csv,True,data\processed\telco_cleaned_base_dataset.csv
+final-qa,file_exists::telco_scored_customers_dashboard.csv,True,exports\dashboard\telco_scored_customers_dashboard.csv
+final-qa,file_exists::telco_risk_band_summary.csv,True,exports\dashboard\telco_risk_band_summary.csv
+final-qa,file_exists::telco_segment_summary_by_contract.csv,True,exports\dashboard\telco_segment_summary_by_contract.csv
+final-qa,file_exists::telco_segment_summary_by_payment_method.csv,True,exports\dashboard\telco_segment_summary_by_payment_method.csv
+final-qa,file_exists::telco_segment_summary_by_internet_service.csv,True,exports\dashboard\telco_segment_summary_by_internet_service.csv
+final-qa,file_exists::telco_high_risk_priority_table.csv,True,exports\dashboard\telco_high_risk_priority_table.csv
+final-qa,file_exists::telco_dashboard_data_dictionary.csv,True,exports\dashboard\telco_dashboard_data_dictionary.csv
+final-qa,file_exists::telco_cross_validation_summary.csv,True,exports\metrics\telco_cross_validation_summary.csv
+final-qa,file_exists::telco_holdout_metrics_comparison.csv,True,exports\metrics\telco_holdout_metrics_comparison.csv
+final-qa,file_exists::telco_threshold_analysis_summary.csv,True,exports\metrics\telco_threshold_analysis_summary.csv
+final-qa,file_exists::telco_model_selection_summary.csv,True,exports\metrics\telco_model_selection_summary.csv
+final-qa,file_exists::telco_logistic_regression_coefficients.csv,True,exports\metrics\telco_logistic_regression_coefficients.csv
+final-qa,file_exists::telco_final_model_permutation_importance.csv,True,exports\metrics\telco_final_model_permutation_importance.csv
+final-qa,file_exists::telco_explanation_cue_reference_table.csv,True,exports\metrics\telco_explanation_cue_reference_table.csv
+final-qa,file_exists::telco_data_audit_summary.csv,True,exports\tables\telco_data_audit_summary.csv
+final-qa,file_exists::telco_missingness_summary.csv,True,exports\tables\telco_missingness_summary.csv
+final-qa,file_exists::telco_class_balance_summary.csv,True,exports\tables\telco_class_balance_summary.csv
+final-qa,file_exists::telco_feature_summary_table.csv,True,exports\tables\telco_feature_summary_table.csv
+final-qa,file_exists::telco_risk_band_definition_table.csv,True,exports\tables\telco_risk_band_definition_table.csv
+final-qa,file_exists::telco_export_schema_check.csv,True,exports\qa\telco_export_schema_check.csv
+final-qa,customerID_uniqueness_check,True,"Unique customerID count = 7032, row count = 7032"
+final-qa,score_probability_numeric_dtype_check,True,predicted_probability and risk_score_0_100 are numeric.
+final-qa,risk_band_count_check,True,"{'Low': '3119', 'Moderate': '1607', 'High': '1432', 'Critical': '874'}"
+final-qa,no_full_dataset_preprocessing_fit_assertion,True,All scaling and one-hot encoding for model fitting were defined inside scikit-learn pipelines.
+final-qa,rerun_completion_note,True,Notebook structured for Restart Kernel + Run All execution.

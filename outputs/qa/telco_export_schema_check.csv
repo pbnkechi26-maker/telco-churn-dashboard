@@ -1,0 +1,8 @@
+check_name,passed
+dashboard_export_exists,True
+dashboard_row_count_matches_clean_df,True
+customerID_unique,True
+predicted_probability_numeric,True
+risk_score_numeric,True
+risk_band_complete,True
+selected_model_name_present,True

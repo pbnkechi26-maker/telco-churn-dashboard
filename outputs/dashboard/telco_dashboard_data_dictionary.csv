@@ -1,0 +1,41 @@
+column_name,dtype,description
+customerID,object,Customer identifier retained for dashboard traceability.
+actual_churn_label,object,Observed churn status from the dataset.
+predicted_probability,float64,Selected model estimated probability of churn.
+risk_score_0_100,int64,Rounded 0-100 version of predicted probability.
+risk_band,object,Operational risk band derived from risk score.
+predicted_label_threshold_0_50,int64,Binary label at probability threshold 0.50.
+selected_model_name,object,Name of the final selected model used to generate exported scores.
+dataset_partition,object,Train/test/full traceability partition flag.
+gender,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+SeniorCitizen,int64,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+Partner,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+Dependents,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+tenure,int64,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+PhoneService,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+MultipleLines,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+InternetService,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+OnlineSecurity,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+OnlineBackup,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+DeviceProtection,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+TechSupport,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+StreamingTV,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+StreamingMovies,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+Contract,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+PaperlessBilling,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+PaymentMethod,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+MonthlyCharges,float64,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+TotalCharges,float64,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+tenure_group,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+monthly_charge_band,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+total_charge_band,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+service_count,int64,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+support_services_count,int64,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+streaming_services_count,int64,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+has_fiber_optic,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+is_month_to_month,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+uses_electronic_check,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+is_senior_citizen_flag,object,"Business field preserved in human-readable form for segmentation, filtering, or drill-down."
+top_risk_driver_1,object,Primary light explanation cue associated with higher predicted churn risk.
+top_risk_driver_2,object,Secondary light explanation cue associated with higher predicted churn risk.
+risk_driver_summary_short,object,Concise dashboard-friendly association summary.

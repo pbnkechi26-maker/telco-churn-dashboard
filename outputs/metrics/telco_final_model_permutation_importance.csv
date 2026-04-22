@@ -1,0 +1,20 @@
+feature_name,importance_mean,importance_std,interpretation_note
+Contract,0.1428063736275113,0.015840015525929122,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+InternetService,0.03641708641566275,0.005840079678330581,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+tenure,0.0275177174627661,0.004396624816726819,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+TotalCharges,0.013190126882399466,0.0030054206094818066,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+OnlineSecurity,0.009503885158745274,0.0024214309800823747,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+MonthlyCharges,0.009170113526357404,0.004088804521213006,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+TechSupport,0.004467673719139998,0.0010293276594133321,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+PaymentMethod,0.002261856075704849,0.0008179938979055302,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+StreamingMovies,0.0016481511199920363,0.0005799884548930007,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+PaperlessBilling,0.0013859482013345082,0.0008284237131901144,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+StreamingTV,0.0008337172764027123,0.00043457732639763706,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+OnlineBackup,0.0005791500794631643,0.0003855275941480456,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+PhoneService,0.0003803624767692249,0.0002605333295041471,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+MultipleLines,0.0003195355410490652,0.000963616533886646,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+SeniorCitizen,0.00024279006683193273,0.0005368100938942311,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+DeviceProtection,0.00021211776094751667,0.00014785004903523734,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+Partner,-5.655610831860614e-05,0.00018902801981743087,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+gender,-7.609837915633078e-05,0.0002527661651546498,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.
+Dependents,-0.00076810183723236,0.00038552281515859857,Higher value means the model relied more on this original input feature for discrimination on the hold-out test set.

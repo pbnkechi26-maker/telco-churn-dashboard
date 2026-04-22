@@ -1,0 +1,3 @@
+model_name,tn,fp,fn,tp
+Logistic Regression,723,310,76,298
+Random Forest,753,280,82,292

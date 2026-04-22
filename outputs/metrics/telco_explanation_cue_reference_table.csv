@@ -1,0 +1,10 @@
+cue_label,rule_basis
+Month-to-month contract,Contract == 'Month-to-month'
+Short tenure,tenure <= 12
+Fiber optic service,InternetService == 'Fiber optic'
+Electronic check payment,PaymentMethod == 'Electronic check'
+Higher monthly charges,MonthlyCharges >= 89.86
+No online security,OnlineSecurity != 'Yes'
+No tech support,TechSupport != 'Yes'
+Paperless billing,PaperlessBilling == 'Yes'
+No dependents,Dependents == 'No'

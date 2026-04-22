@@ -1,0 +1,46 @@
+feature_name,coefficient,association_direction
+categorical__Contract_Month-to-month,0.6921611079764508,Associated with higher predicted churn risk
+categorical__InternetService_Fiber optic,0.6480901380885504,Associated with higher predicted churn risk
+numeric__TotalCharges,0.6079052354167231,Associated with higher predicted churn risk
+categorical__StreamingTV_Yes,0.24272167873110523,Associated with higher predicted churn risk
+categorical__StreamingMovies_Yes,0.23555565290347713,Associated with higher predicted churn risk
+categorical__PaymentMethod_Electronic check,0.2250954803641454,Associated with higher predicted churn risk
+categorical__OnlineSecurity_No,0.1931716693431879,Associated with higher predicted churn risk
+categorical__TechSupport_No,0.17146936367220617,Associated with higher predicted churn risk
+categorical__MultipleLines_Yes,0.11574063218619507,Associated with higher predicted churn risk
+categorical__DeviceProtection_Yes,0.07579892690035785,Associated with higher predicted churn risk
+numeric__SeniorCitizen,0.07540791374345487,Associated with higher predicted churn risk
+categorical__OnlineBackup_No,0.07427800776848117,Associated with higher predicted churn risk
+categorical__PaperlessBilling_Yes,0.0265140108413527,Associated with higher predicted churn risk
+categorical__Dependents_No,0.012597697381256377,Associated with higher predicted churn risk
+categorical__OnlineBackup_Yes,-0.01573297299728142,Associated with lower predicted churn risk
+categorical__DeviceProtection_No,-0.01725389212891657,Associated with lower predicted churn risk
+categorical__PhoneService_No,-0.07457278998206236,Associated with lower predicted churn risk
+categorical__MultipleLines_No phone service,-0.07457278998206236,Associated with lower predicted churn risk
+categorical__Partner_No,-0.08064830950817538,Associated with lower predicted churn risk
+categorical__gender_Female,-0.09466415675280912,Associated with lower predicted churn risk
+categorical__gender_Male,-0.10654551418757933,Associated with lower predicted churn risk
+categorical__Contract_One year,-0.10826172258160126,Associated with lower predicted churn risk
+categorical__TechSupport_Yes,-0.11292432890160609,Associated with lower predicted churn risk
+categorical__PaymentMethod_Credit card (automatic),-0.11327860835036122,Associated with lower predicted churn risk
+categorical__Partner_Yes,-0.12056136143239427,Associated with lower predicted churn risk
+categorical__PhoneService_Yes,-0.12663688095957518,Associated with lower predicted churn risk
+categorical__PaymentMethod_Mailed check,-0.1269349433456402,Associated with lower predicted churn risk
+categorical__OnlineSecurity_Yes,-0.13462663457299728,Associated with lower predicted churn risk
+categorical__StreamingMovies_No,-0.1770106181321877,Associated with lower predicted churn risk
+categorical__StreamingTV_No,-0.18417664395993852,Associated with lower predicted churn risk
+categorical__PaymentMethod_Bank transfer (automatic),-0.18609159960918722,Associated with lower predicted churn risk
+categorical__Dependents_Yes,-0.21380736832346234,Associated with lower predicted churn risk
+categorical__PaperlessBilling_No,-0.22772368178310626,Associated with lower predicted churn risk
+categorical__MultipleLines_No,-0.24237751314434597,Associated with lower predicted churn risk
+categorical__TechSupport_No internet service,-0.259754705711788,Associated with lower predicted churn risk
+categorical__OnlineSecurity_No internet service,-0.259754705711788,Associated with lower predicted churn risk
+categorical__InternetService_No,-0.259754705711788,Associated with lower predicted churn risk
+categorical__StreamingTV_No internet service,-0.259754705711788,Associated with lower predicted churn risk
+categorical__DeviceProtection_No internet service,-0.259754705711788,Associated with lower predicted churn risk
+categorical__OnlineBackup_No internet service,-0.259754705711788,Associated with lower predicted churn risk
+categorical__StreamingMovies_No internet service,-0.2597547057117881,Associated with lower predicted churn risk
+categorical__InternetService_DSL,-0.5895451033177962,Associated with lower predicted churn risk
+numeric__MonthlyCharges,-0.6067267995428335,Associated with lower predicted churn risk
+categorical__Contract_Two year,-0.7851090563367411,Associated with lower predicted churn risk
+numeric__tenure,-1.2507765113008067,Associated with lower predicted churn risk

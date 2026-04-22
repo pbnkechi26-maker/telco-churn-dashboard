@@ -1,0 +1,5 @@
+risk_band,score_range,operational_meaning
+Low,0-29,Monitor; usually not immediate action.
+Moderate,30-59,Watchlist; consider contextual review.
+High,60-79,Priority review candidates for retention outreach.
+Critical,80-100,Highest priority cases for attention subject to capacity.

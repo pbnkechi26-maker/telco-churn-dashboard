@@ -1,0 +1,14 @@
+feature_group,feature_name,role
+identifier,customerID,traceability only
+target,Churn,raw human-readable target
+target,churn_binary,binary modelling target
+derived_dashboard,tenure_group,segment exploration
+derived_dashboard,monthly_charge_band,segment exploration
+derived_dashboard,total_charge_band,segment exploration
+derived_dashboard,service_count,portfolio and segment analysis
+derived_dashboard,support_services_count,portfolio and segment analysis
+derived_dashboard,streaming_services_count,portfolio and segment analysis
+derived_dashboard,has_fiber_optic,segment exploration
+derived_dashboard,is_month_to_month,segment exploration
+derived_dashboard,uses_electronic_check,segment exploration
+derived_dashboard,is_senior_citizen_flag,segment exploration

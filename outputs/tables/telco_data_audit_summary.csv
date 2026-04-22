@@ -1,0 +1,7 @@
+metric,value
+row_count,7043
+column_count,21
+exact_duplicate_rows,0
+target_column_present,True
+identifier_column_present,True
+totalcharges_blank_strings,11

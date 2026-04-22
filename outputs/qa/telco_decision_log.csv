@@ -1,0 +1,6 @@
+decision_area,decision,reason
+Identifier handling,Preserve customerID for traceability but exclude it from model fitting.,customerID has traceability value but no substantive predictive meaning.
+Target variable,Use Churn as the target and encode it later as a binary field.,Binary churn prediction is the dissertation target task.
+TotalCharges handling,"Inspect blank strings explicitly, coerce TotalCharges to numeric, and resolve the resulting missing values transparently.",TotalCharges is conceptually numeric but may contain blank-string rows.
+Duplicate handling,Exact duplicate rows identified: 0.,Visible audit before any removal or retention decision.
+Leakage control,Do not one-hot encode or scale outside model pipelines.,Prevents train/test contamination and supports reproducibility.

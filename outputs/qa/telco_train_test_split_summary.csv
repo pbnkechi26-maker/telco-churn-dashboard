@@ -1,0 +1,4 @@
+partition,row_count,churn_rate_pct
+train,5625,26.58
+test,1407,26.58
+full_dataset,7032,26.58

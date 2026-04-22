@@ -1,0 +1,4 @@
+Contract,count,churn_rate,churn_rate_pct
+Month-to-month,3875,0.4270967741935484,42.71
+One year,1472,0.11277173913043478,11.28
+Two year,1685,0.028486646884272996,2.85

@@ -1,0 +1,9 @@
+model_name,label,precision,recall,f1-score,support
+Logistic Regression,0,0.9049,0.6999,0.7893,1033.0
+Logistic Regression,1,0.4901,0.7968,0.6069,374.0
+Logistic Regression,macro avg,0.6975,0.7483,0.6981,1407.0
+Logistic Regression,weighted avg,0.7946,0.7257,0.7408,1407.0
+Random Forest,0,0.9018,0.7289,0.8062,1033.0
+Random Forest,1,0.5105,0.7807,0.6173,374.0
+Random Forest,macro avg,0.7061,0.7548,0.7118,1407.0
+Random Forest,weighted avg,0.7978,0.7427,0.756,1407.0
